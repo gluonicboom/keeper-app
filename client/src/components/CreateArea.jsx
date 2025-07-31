@@ -37,9 +37,10 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form className="create-note">
+      <form className='relative w-[480px] mt-[30px] mb-[20px] mx-auto bg-[#ffffff82] 
+      p-4 rounded-lg shadow-[0_1px_5px rgba(138,137,137,0.232)]'>
         {isExpanded && (
-          <input
+          <input className = 'w-full border-none p-1 outline-none text-xl font-inherit resize-none'
             name="title"
             onChange={handleChange}
             value={note.title}
@@ -47,7 +48,7 @@ function CreateArea(props) {
           />
         )}
 
-        <textarea
+        <textarea className= 'w-full border-none p-1 outline-none text-xl font-inherit resize-none'
           name="content"
           onChange={handleChange}
           onClick={expand}
@@ -56,7 +57,25 @@ function CreateArea(props) {
           rows={isExpanded ? "3" : "1"}
         />
         <Zoom in={isExpanded}>
-          <Fab onClick={submitNote}>
+          <Fab onClick={submitNote} 
+          sx={{
+            position: 'absolute',
+            right: '18px',
+            bottom: '-18px',
+            backgroundColor: '#808080', 
+            color: 'black', 
+            border: 'none',
+            borderRadius: '50%',
+            width: '36px',
+            height: '36px',
+            boxShadow: '0 1px 3px #778096',
+            cursor: 'pointer',
+            outline: 'none',
+            '&:hover': {
+                backgroundColor: 'gray-500', 
+            }
+          }}>
+          
             <AddIcon />{" "}
           </Fab>
         </Zoom>
