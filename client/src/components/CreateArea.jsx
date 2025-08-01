@@ -37,7 +37,7 @@ function CreateArea(props) {
 
   return (
     <div>
-      <form className='relative w-[480px] mt-[30px] mb-[20px] mx-auto bg-[#ffffff82] 
+      <form className='relative w-[480px] mt-[30px] mb-[20px] mx-auto bg-[#a39d9d82] 
       p-4 rounded-lg shadow-[0_1px_5px rgba(138,137,137,0.232)]'>
         {isExpanded && (
           <input className = 'w-full border-none p-1 outline-none text-xl font-inherit resize-none'
@@ -53,7 +53,7 @@ function CreateArea(props) {
           onChange={handleChange}
           onClick={expand}
           value={note.content}
-          placeholder="Take a note..."
+          placeholder="What's on your mind..."
           rows={isExpanded ? "3" : "1"}
         />
         <Zoom in={isExpanded}>

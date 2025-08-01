@@ -6,10 +6,11 @@ function Note(props) {
   }
 
   return (
-    <div className='bg-[#fff] rounded-lg p-2.5 m-4 w-60 float-left' >
-      <h1 className='text-lg mb-1.5'>{props.title}</h1>
+    <div className='relative bg-white rounded-lg p-2.5 m-4 w-60 float-left' >
+      <h1 className='font-semibold text-lg mb-1.5'>{props.title}</h1>
       <p className = 'text-lg mb-2.5'>{props.content}</p>
-      <button onClick={handleClick}>
+      <button className='absolute right right-4 bottom-4'
+      onClick={handleClick}>
         <DeleteOutlineIcon />
       </button>
     </div>

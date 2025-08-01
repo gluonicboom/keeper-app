@@ -23,7 +23,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='app-background min-h-screen'>
      
 
       <Header />

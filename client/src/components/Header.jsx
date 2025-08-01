@@ -4,7 +4,7 @@ import BrainIcon from "./BrainIcon";
 function Header() {
   return (
     <>
-      <header className='bg-gray-500  px-8 py-4 shadow-md'>
+      <header className='bg-[#7d899b] px-8 py-4 shadow-md'>
         <h1 className= 'text-[#fff] font-serif font-extralightd text-2xl '>
          <BrainIcon fontSize = "large"/>
         {""} Brain Extension
